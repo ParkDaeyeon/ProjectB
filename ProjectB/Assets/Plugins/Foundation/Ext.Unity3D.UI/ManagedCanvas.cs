@@ -29,7 +29,6 @@ namespace Ext.Unity3D.UI
         public enum Mode
         {
             Default,
-            Foremost,
         }
         [SerializeField]
         Mode mode;
@@ -58,9 +57,9 @@ namespace Ext.Unity3D.UI
                 newCamera = mgr.MainCamera;
                 break;
 
-            case Mode.Foremost:
-                newCamera = mgr.ForemostCamera;
-                break;
+            //case Mode.Foremost:
+            //    newCamera = mgr.ForemostCamera;
+            //    break;
             }
             if (oldCamera != newCamera)
                 this.canvas.worldCamera = newCamera;

@@ -1,3 +1,0 @@
-﻿namespace Program.View.Common
-{
-}

@@ -4,9 +4,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Ext.Collection.AntiGC;
-#if !UNITY_EDITOR && UNITY_SWITCH
-using nn.hid;
-#endif// !UNITY_EDITOR && UNITY_SWITCH
 namespace Ext.Unity3D.UI
 {
     public class ScreenTouches : Responsive
@@ -191,16 +188,9 @@ namespace Ext.Unity3D.UI
         }
 
         protected CachedPool<Handle> touches;
-//#if !UNITY_EDITOR && UNITY_SWITCH
-//        TouchScreenState5 touchScreenStates = new TouchScreenState5();
-//#endif// !UNITY_EDITOR && UNITY_SWITCH
         void Awake()
         {
             this.touches = new CachedPool<Handle>(32, this.OnAllocateTouchHandle);
-
-//#if !UNITY_EDITOR && UNITY_SWITCH
-//            this.touchScreenStates.SetDefault();
-//#endif// !UNITY_EDITOR && UNITY_SWITCH
         }
 
         protected virtual Handle OnAllocateTouchHandle(CachedPool<Handle> pool) { return new Handle(); }
@@ -348,30 +338,6 @@ namespace Ext.Unity3D.UI
                 screenPosition.y *= this.toArea.y;
                 this.OnTouch(0, inputPosition, screenPosition);
             }
-//#elif !UNITY_EDITOR && UNITY_SWITCH
-//            var height = Screen.height;
-//            TouchScreen.GetState(ref this.touchScreenStates);
-//            for (int n = 0; n < this.touchScreenStates.count; n++)
-//            {
-//                var touchState = this.touchScreenStates.touches[n];
-//                switch (touchState.attributes)
-//                {
-//                case TouchAttribute.End:
-//                    break;
-
-//                case TouchAttribute.Start:
-//                default:
-//                    {
-//                        var inputPosition = new Vector2(touchState.x, height - touchState.y);
-//                        var screenPosition = inputPosition;
-//                        screenPosition -= this.toAreaOffset;
-//                        screenPosition.x *= this.toArea.x;
-//                        screenPosition.y *= this.toArea.y;
-//                        this.OnTouch(touchState.fingerId, inputPosition, screenPosition);
-//                        break;
-//                    }
-//                }
-//            }
 #else// UNITY_EDITOR || UNITY_STANDALONE
             for (int n = 0, cnt = Input.touchCount; n < cnt; ++n)
             {

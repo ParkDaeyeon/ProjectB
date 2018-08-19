@@ -19,12 +19,7 @@
         static Backend backend;
         public static void Open()
         {
-            Preference.backend =
-#if !UNITY_EDITOR && UNITY_SWITCH
-                new Internal.Preference_NS();
-#else// UNITY_*
-                new Internal.Preference_UnityCustom();
-#endif// UNITY_*
+            Preference.backend = new Internal.Preference_UnityCustom();
         }
         public static void Close()
         {

@@ -8,13 +8,7 @@ using Ext.Unity3D;
 using Ext.Async;
 using Ext.IO;
 
-#if LOG_MEMORY
-using Program.Model.Service.Implement;
-#endif// LOG_MEMORY
 using Program.View;
-#if UNITY_SWITCH
-using nn.fs;
-#endif// UNITY_SWITCH
 
 namespace Program.Core
 {

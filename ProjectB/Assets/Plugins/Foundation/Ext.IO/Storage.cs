@@ -125,14 +125,7 @@ namespace Ext.IO
         static Backend backend;
         public static void Open()
         {
-            Storage.backend =
-#if !UNITY_EDITOR && UNITY_WEBPLAYER
-                new Internal.Storage_Web();
-#elif !UNITY_EDITOR && UNITY_SWITCH
-                new Internal.Storage_NS();
-#else// UNITY_*
-                new Internal.Storage_File();
-#endif// UNITY_*
+            Storage.backend = new Internal.Storage_File();
         }
 
         public static void Close()

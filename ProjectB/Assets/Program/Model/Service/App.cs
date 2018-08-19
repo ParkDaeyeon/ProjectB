@@ -27,12 +27,6 @@ namespace Program.Model.Service
     {
         App() { }
 
-        public static bool UpdateNetwork
-        {
-            set { App.Singleton.UpdateNetwork = value; }
-            get { return App.Singleton.UpdateNetwork; }
-        }
-
         public static void Update()
         {
             App.Singleton.Update();
@@ -123,11 +117,9 @@ namespace Program.Model.Service
                 Preference.Open();
 
                 Observer.Open();
-                NetStat.Open();
 
                 Asset.Open();
                 Present.Open();
-                UriHandler.Open();
 
 #if LOG_MEMORY
                 this.StartLogMemoryInfo();
@@ -148,11 +140,9 @@ namespace Program.Model.Service
                         call();
                 }
 
-                UriHandler.Close();
                 Present.Close();
                 Asset.Close();
                 
-                NetStat.Close();
                 Observer.Close();
 
                 Storage.Close();
@@ -193,13 +183,6 @@ namespace Program.Model.Service
             }
 
 
-            bool updateNetwork = true;
-            internal bool UpdateNetwork
-            {
-                set { this.updateNetwork = value; }
-                get { return this.updateNetwork; }
-            }
-
             internal void Update()
             {
                 if (this.isResetting)
@@ -208,9 +191,6 @@ namespace Program.Model.Service
                 if (AppImpl.IsOpened)
                     AppImpl.Update();
 
-                if (this.updateNetwork)
-                    NetStat.Update();
-
                 Present.UpdatePresent();
             }
 
@@ -218,11 +198,6 @@ namespace Program.Model.Service
             {
                 if (this.isResetting)
                     return;
-
-                if (this.updateNetwork)
-                {
-                    NetStat.LateUpdate();
-                }
 
                 BaseView.UpdateViews();
                 Responsive.UpdateViews();
@@ -259,8 +234,6 @@ namespace Program.Model.Service
                 if (AppImpl.IsOpened)
                     AppImpl.Suspend();
 
-                NetStat.Suspend();
-
                 for (int n = 0, cnt = this.suspendListeners.Count; n < cnt; ++n)
                 {
                     var listener = this.suspendListeners[n];
@@ -280,8 +253,6 @@ namespace Program.Model.Service
 
                 if (AppImpl.IsOpened)
                     AppImpl.Resume();
-
-                NetStat.Resume();
 
                 for (int n = 0, cnt = this.suspendListeners.Count; n < cnt; ++n)
                 {
