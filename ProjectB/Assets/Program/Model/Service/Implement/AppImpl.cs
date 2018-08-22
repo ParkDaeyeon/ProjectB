@@ -84,7 +84,7 @@ namespace Program.Model.Service.Implement
         {
             public void OpenSingleton()
             {
-                Responsive.ViewportAreaSize = new Vector2(1280, 720);
+                Responsive.ViewportAreaSize = new Vector2(1920, 1080);
                 Present.OnCheckBack = () =>
                 {
                     if (Wait.IsActive || LoadingIndicator.IsActive)
