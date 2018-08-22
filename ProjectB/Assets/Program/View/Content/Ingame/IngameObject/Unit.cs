@@ -15,11 +15,11 @@ namespace Program.View.Content.Ingame.IngameObject
 {
     public class Unit : ManagedUIComponent
     {
-        public void Spawn(UnitData unitData, Vector2 spawnPosition, int direction)
+        public void Spawn(UnitData unitData, UnitBody.UnitBodySprites bodySprites, Vector2 spawnPosition, int direction)
         {
             this.SetActive(true);
 
-            this.Init(unitData);
+            this.Init(unitData, bodySprites);
 
             this.CachedRectTransform.anchoredPosition = spawnPosition;
             this.Direction = direction;
@@ -28,7 +28,7 @@ namespace Program.View.Content.Ingame.IngameObject
             this.StartCoroutine(this.MovingLoop());
         }
 
-        public void Init(UnitData unitData)
+        public void Init(UnitData unitData, UnitBody.UnitBodySprites bodySprites)
         {
             this.baseData = unitData;
             this.currentData = unitData;
@@ -45,8 +45,11 @@ namespace Program.View.Content.Ingame.IngameObject
             else
                 this.enemiesInRange = new List<Unit>(32);
 
+            this.unitRange.SetRange(this.Range);
             this.unitRange.OnTriEnter = this.OnTriEnter;
             this.unitRange.OnTriExit = this.OnTriExit;
+
+            this.body.Init(bodySprites);
         }
 
         IEnumerator MainLoop()
@@ -65,11 +68,12 @@ namespace Program.View.Content.Ingame.IngameObject
 #endif// UNITY_EDITOR
         public struct UnitData
         {
+            public long code;
             public long teamId;
             public long hp;
             public long mSpeed;
             public long damage;
-            public long knockbackPower;
+            public float knockbackPower;
             public long range;
             public long aSpeed;
 
@@ -117,7 +121,7 @@ namespace Program.View.Content.Ingame.IngameObject
         {
             get { return this.currentData.damage; }
         }
-        public long KnockbackPower
+        public float KnockbackPower
         {
             get { return this.currentData.knockbackPower; }
         }
@@ -139,7 +143,7 @@ namespace Program.View.Content.Ingame.IngameObject
         }
 
         [SerializeField]
-        RectTransform body;
+        UnitBody body;
 #if UNITY_EDITOR
         [SerializeField]
 #endif// UNITY_EDITOR
@@ -153,7 +157,7 @@ namespace Program.View.Content.Ingame.IngameObject
 
                 this.direction = value;
 
-                var tr = this.body;
+                var tr = this.body.transform;
                 var scale = tr.localScale;
                 scale.x = this.direction;
 
@@ -191,15 +195,15 @@ namespace Program.View.Content.Ingame.IngameObject
 
             this.isDamaged = false;
         }
-        float knockbackTime = 0.2f;
+        float knockbackTime = 1f;
         IEnumerator OnKnockback(Unit caster)
         {
             var rt = this.CachedRectTransform;
 
-            var velocity = -1 * this.Direction * caster.KnockbackPower;
+            var velocity = -1 * this.Direction * knockbackTime;
 
             var t = 0f;
-            while (knockbackTime > (t += Time.deltaTime))
+            while (caster.KnockbackPower > (t += Time.deltaTime))
             {
                 if (!this.IsLive)
                     yield break;   
@@ -344,7 +348,7 @@ namespace Program.View.Content.Ingame.IngameObject
             base.OnEditorSetting();
 
             this.unitRange = this.FindComponent<UnitRange>("Range");
-            this.body = this.FindComponent<RectTransform>("Body");
+            this.body = this.FindComponent<UnitBody>("Body");
             this.hpBar = this.FindComponent<HpBar>("UI/HpBar");
         }
 #endif// UNITY_EDITOR

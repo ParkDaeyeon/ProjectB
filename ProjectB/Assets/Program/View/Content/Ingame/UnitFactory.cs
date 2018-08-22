@@ -42,7 +42,7 @@ namespace Program.View.Content.Ingame
                 {
                     var unit = IngameObjectManager.GetNextUnit();
                     var unitData = unitDatas[n];
-                    unit.Spawn(unitData, spawnData.position, spawnData.direction);
+                    unit.Spawn(unitData, UnitSpritesManager.GetBodySpritesByCode(unitData.code), spawnData.position, spawnData.direction);
                 }
             }
         }

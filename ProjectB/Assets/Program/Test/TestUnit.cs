@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using Program.View.Content.Ingame;
+using System.Collections.Generic;
+using Program.View.Content.Ingame.IngameObject;
 
 public class TestUnit : MonoBehaviour
 {
@@ -8,13 +10,7 @@ public class TestUnit : MonoBehaviour
 
     [SerializeField]
     RectTransform spawnTr2;
-
-    [SerializeField]
-    UnitFactory factory1;
-
-    [SerializeField]
-    UnitFactory factory2;
-
+    
     [SerializeField]
     UnitFactory.UnitSpawnData[] datas1;
     [SerializeField]
@@ -25,13 +21,10 @@ public class TestUnit : MonoBehaviour
 
     void Awake ()
     {
-        this.player.Open();
-
         for (int n = 0, cnt = this.datas1.Length; n < cnt; ++n)
         {
             var data = this.datas1[n];
-
-            var rt = this.factory1.CachedTransform as RectTransform;
+            var rt = this.spawnTr1;
 
             data.direction = 1;
             data.position = rt.anchoredPosition;
@@ -41,18 +34,14 @@ public class TestUnit : MonoBehaviour
         {
             var data = this.datas2[n];
 
-            var rt = this.factory2.CachedTransform as RectTransform;
+            var rt = this.spawnTr2;
 
             data.direction = -1;
             data.position = rt.anchoredPosition;
             data.time = n * 4;
         }
 
-        this.StartCoroutine(this.factory1.StartSpawn(this.datas1));
-        this.StartCoroutine(this.factory2.StartSpawn(this.datas2));
-    }
-    private void OnDestroy()
-    {
-        this.player.Close();
+        this.player.StartFactory(0, datas1);
+        this.player.StartFactory(1, datas2);
     }
 }

@@ -75,5 +75,20 @@ namespace Program.View.Content.Ingame.IngameObject
             if (null != this.onTriExit)
                 this.onTriExit(collision);
         }
+
+        [SerializeField]
+        CircleCollider2D rangeCollider;
+        public void SetRange(long range)
+        {
+            this.rangeCollider.radius = range;
+        }
+
+#if UNITY_EDITOR
+        protected override void OnEditorSetting()
+        {
+            base.OnEditorSetting();
+            this.rangeCollider = this.GetComponent<CircleCollider2D>();
+        }
+#endif// UNITY_EDITOR
     }
 }

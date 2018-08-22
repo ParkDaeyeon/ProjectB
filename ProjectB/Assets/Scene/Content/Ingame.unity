@@ -917,496 +917,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 96287246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e30e98b96f75f4a9c9070b6cfcd078, type: 3}
+  m_Script: {fileID: 11500000, guid: 72ace0483f18c384ab858f1afd0da492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTr1: {fileID: 139757365}
-  spawnTr2: {fileID: 1400681765}
-  factory1: {fileID: 139757366}
-  factory2: {fileID: 1400681766}
-  datas1:
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 25
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 1
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 1
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 2
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  datas2:
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  - time: 0
-    position: {x: 0, y: 0}
-    direction: 0
-    unitDatas:
-    - teamId: 0
-      hp: 100
-      mSpeed: 50
-      damage: 10
-      knockbackPower: 5
-      range: 100
-      aSpeed: 10
-      skillKinds: 00000000
-  player: {fileID: 959898671}
+  editorAutoSetup: 0
+  editorAutoSetupInChildrens: 0
+  editorTesting: 0
+  editorTestingLooped: 0
+  cachedTransform: {fileID: 96287248}
+  cachedRectTransform: {fileID: 0}
+  editorTest_AreaInfo:
+    areaPivot: {x: 0, y: 0}
+    areaRate: {x: 0.5, y: 0.5}
+    viewportAreaSize: {x: 1280, y: 720}
+    onDummyArea: 1
+  baseCanvas: {fileID: 291408221}
+  canvases:
+  - {fileID: 291408221}
+  group: {fileID: 0}
+  gamePlayer: {fileID: 959898671}
+  gameUi: {fileID: 0}
 --- !u!4 &96287248
 Transform:
   m_ObjectHideFlags: 0
@@ -1573,16 +1103,16 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139757364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 747112943}
-  m_RootOrder: 1
+  m_Father: {fileID: 216268185}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.4, y: 0}
+  m_AnchoredPosition: {x: -500, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139757366
@@ -2121,6 +1651,41 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 206711807}
   m_Script: {fileID: 11500000, guid: 004d8d2a538df0847a8090420d30de6e, type: 3}
+--- !u!1 &216268184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216268185}
+  m_Layer: 5
+  m_Name: Factories
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &216268185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216268184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 139757365}
+  - {fileID: 1400681765}
+  m_Father: {fileID: 959898670}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &240701984 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224024172093000732, guid: c2ec7b4af30d9344aa4599c10ed23774,
@@ -4196,6 +3761,110 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 614423990}
   m_Script: {fileID: 11500000, guid: 004d8d2a538df0847a8090420d30de6e, type: 3}
+--- !u!1001 &660491991
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2043285849}
+    m_Modifications:
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117172425235970, guid: a3addbb656dd18648a1ecad7a09b43ce, type: 2}
+      propertyPath: m_Name
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3addbb656dd18648a1ecad7a09b43ce, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &686847071
 Prefab:
   m_ObjectHideFlags: 0
@@ -4456,83 +4125,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 726029394}
   m_Script: {fileID: 11500000, guid: 93f8c9c211b00204f889e9bf1c939937, type: 3}
---- !u!1 &741662896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 741662899}
-  - component: {fileID: 741662898}
-  - component: {fileID: 741662897}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &741662897
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741662896}
-  m_Enabled: 1
---- !u!20 &741662898
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741662896}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &741662899
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741662896}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 507.8451, y: 208.5664, z: -3.666148}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747112942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4559,8 +4151,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 959898670}
-  - {fileID: 139757365}
-  - {fileID: 1400681765}
   m_Father: {fileID: 291408217}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5828,6 +5418,7 @@ RectTransform:
   m_Children:
   - {fileID: 798148920}
   - {fileID: 2043285849}
+  - {fileID: 216268185}
   m_Father: {fileID: 747112943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5937,6 +5528,10 @@ MonoBehaviour:
   - {fileID: 140095085}
   - {fileID: 1457653241}
   - {fileID: 1058102488}
+  spawnPosition: []
+  factories:
+  - {fileID: 139757366}
+  - {fileID: 1400681766}
 --- !u!1001 &974011142
 Prefab:
   m_ObjectHideFlags: 0
@@ -8173,12 +7768,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 747112943}
-  m_RootOrder: 2
+  m_Father: {fileID: 216268185}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 494, y: -0.000030517578}
+  m_AnchoredPosition: {x: 500, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400681766
@@ -8327,110 +7922,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1403467267}
   m_Script: {fileID: 11500000, guid: 004d8d2a538df0847a8090420d30de6e, type: 3}
---- !u!1001 &1449399241
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2043285849}
-    m_Modifications:
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1117172425235970, guid: a3addbb656dd18648a1ecad7a09b43ce, type: 2}
-      propertyPath: m_Name
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a3addbb656dd18648a1ecad7a09b43ce, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &1453310765
 Prefab:
   m_ObjectHideFlags: 0
@@ -11269,12 +10760,12 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224886594552397454, guid: a3addbb656dd18648a1ecad7a09b43ce,
     type: 2}
-  m_PrefabInternal: {fileID: 1449399241}
+  m_PrefabInternal: {fileID: 660491991}
 --- !u!114 &2017197204 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114222622569286252, guid: a3addbb656dd18648a1ecad7a09b43ce,
     type: 2}
-  m_PrefabInternal: {fileID: 1449399241}
+  m_PrefabInternal: {fileID: 660491991}
   m_Script: {fileID: 11500000, guid: 004d8d2a538df0847a8090420d30de6e, type: 3}
 --- !u!1 &2043285848
 GameObject:

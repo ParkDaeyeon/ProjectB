@@ -12,28 +12,40 @@ namespace Program.View.Content.Ingame
     {
         [SerializeField]
         Unit[] unitsPool;
+        public Unit[] UnitsPool
+        {
+            get { return this.unitsPool; }
+        }
+
         [SerializeField]
         Projectile[] projectilesPool;
-
-        bool isOpened;
-        public bool IsOpened
+        public Projectile[] ProjectilesPool
         {
-            get { return this.isOpened; }
-        }
-        public void Open()
-        {
-            this.isOpened = true;
-
-            IngameObjectManager.Open(this.unitsPool.ToList(), this.projectilesPool.ToList());
-            IngameObjectUIManager.Open();
+            get { return this.projectilesPool; }
         }
 
-        public void Close()
-        {
-            IngameObjectUIManager.Close();
-            IngameObjectManager.Close();
+        [SerializeField]
+        RectTransform[] spawnPosition;
 
-            this.isOpened = false;
+        [SerializeField]
+        UnitFactory[] factories;
+
+        public void StartFactory(int index, IEnumerable<UnitFactory.UnitSpawnData> spawnData)
+        {
+            if (-1 < index && index < this.GetFactoryCount())
+                this.StartCoroutine(this.factories[index].StartSpawn(spawnData));
+        }
+        public UnitFactory GetFactoryAt(int index)
+        {
+            if (-1 < index && index < this.GetFactoryCount())
+                return this.factories[index];
+            else
+                return null;
+        }
+
+        public int GetFactoryCount()
+        {
+            return null != this.factories ? this.factories.Length : 0;
         }
         
 #if UNITY_EDITOR
@@ -48,6 +60,10 @@ namespace Program.View.Content.Ingame
             this.projectilesPool = this.FindComponentsInChildren<Projectile>("ProjectilePool");
             for (int n = 0, cnt = this.projectilesPool.Length; n < cnt; ++n)
                 this.projectilesPool[n].name = n.ToString();
+
+            this.spawnPosition = this.FindComponentsInChildren<RectTransform>();
+
+            this.factories = this.FindComponentsInChildren<UnitFactory>("Factories");
         }
 #endif// UNITY_EDITOR
     }

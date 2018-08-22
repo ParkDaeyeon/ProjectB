@@ -104,6 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224461081605391672}
+  - component: {fileID: 114032367148697696}
   - component: {fileID: 61015251251230852}
   - component: {fileID: 50827828404151502}
   m_Layer: 10
@@ -273,6 +274,26 @@ MonoBehaviour:
   resizeAutomatically: 0
   overrideRendering: 1
   caches: {fileID: 0}
+--- !u!114 &114032367148697696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217843703093126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628cab80e5788f046ae67576e06985e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorAutoSetup: 0
+  editorAutoSetupInChildrens: 0
+  editorTesting: 0
+  editorTestingLooped: 0
+  cachedTransform: {fileID: 224461081605391672}
+  head: {fileID: 114015010686031016}
+  body: {fileID: 114961252777939542}
+  leftArm: {fileID: 114329845314117574}
+  rightArm: {fileID: 114193507547365994}
 --- !u!114 &114193507547365994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,6 +342,7 @@ MonoBehaviour:
   cachedTransform: {fileID: 224886594552397454}
   cachedRectTransform: {fileID: 224886594552397454}
   baseData:
+    code: 0
     teamId: 0
     hp: 0
     mSpeed: 0
@@ -330,6 +352,7 @@ MonoBehaviour:
     aSpeed: 0
     skillKinds: 
   currentData:
+    code: 0
     teamId: 0
     hp: 0
     mSpeed: 0
@@ -338,7 +361,7 @@ MonoBehaviour:
     range: 0
     aSpeed: 0
     skillKinds: 
-  body: {fileID: 224461081605391672}
+  body: {fileID: 114032367148697696}
   direction: 1
   hpBar: {fileID: 114639961442049762}
   unitRange: {fileID: 114727531997690134}
@@ -435,7 +458,8 @@ MonoBehaviour:
   editorAutoSetupInChildrens: 0
   editorTesting: 0
   editorTestingLooped: 0
-  cachedTransform: {fileID: 0}
+  cachedTransform: {fileID: 224625402845051542}
+  rangeCollider: {fileID: 58629026729934258}
 --- !u!114 &114961252777939542
 MonoBehaviour:
   m_ObjectHideFlags: 1

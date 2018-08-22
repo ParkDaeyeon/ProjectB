@@ -1,5 +1,8 @@
 ﻿using Program.Core;
+using Program.Model.Service;
+using Program.View;
 using Program.View.Content;
+using UnityEngine;
 
 namespace Program.Presents
 {
@@ -25,23 +28,32 @@ namespace Program.Presents
         {
             this.SetState(State.LoadAssets);
 
+            Asset.Start();
+
             // TODO: LoadAssets and set state to ready
+            this.SetStateReadyToStart();
         }
 
         void SetStateReadyToStart()
         {
             this.SetState(State.ReadyToStart);
 
-            // TODO: go to state out
-            this.SetStateOut();
+            this.AddStateTask(() =>
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                    this.SetStateOut();
+            });
         }
 
         void SetStateOut()
         {
             this.SetState(State.Out);
 
-            // TODO: 임시로 ingame으로 보냄 나중에 아웃게임에 씬 생기면 그 때 변경
-            // Present.OpenNextPresent(typeof(Ingame));
+            Fade.Out(Color.black, 0.5f, () =>
+            {
+                // TODO: 임시로 ingame으로 보냄 나중에 아웃게임에 씬 생기면 그 때 변경
+                Present.OpenNextPresent(typeof(Ingame));
+            });
         }
     }
 }

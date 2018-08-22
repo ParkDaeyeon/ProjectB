@@ -47,3 +47,6 @@ TagManager:
   - name: UI
     uniqueID: 2121090915
     locked: 0
+  - name: FOREGROUND
+    uniqueID: 3026355841
+    locked: 0

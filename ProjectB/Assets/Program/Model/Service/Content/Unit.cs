@@ -60,9 +60,9 @@ namespace Program.Model.Service.Content
         {
             get { return this.assetModel.attackSpeed; }
         }
-        public short Order
+        public long Order
         {
-            get { return this.assetModel.order; }
+            get { return this.assetModel.code; }
         }
 
         public static Unit GetUnit(long code)

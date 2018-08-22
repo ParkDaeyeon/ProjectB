@@ -96,6 +96,7 @@ namespace Program.Model.Service.Implement
                     //this.CreateSheetInfo<long, Concours4KeyData >(this.OnOpenSheets_Concours4KeyData    ),
                     //this.CreateSheetInfo<long, Concours6KeyData >(this.OnOpenSheets_Concours6KeyData    ),
                     //this.CreateSheetInfo<long, PianoData        >(this.OnOpenSheets_PianoData           ),
+                    this.CreateSheetInfo<long, UnitData     >(this.OnOpenSheets_UnitData        ),
                 };
 
                 var progressStride = 1f / sheetInfos.Length;
@@ -211,7 +212,7 @@ namespace Program.Model.Service.Implement
             //    counter = this.OnOpenSheets_IAssetable(row, assetModel, long.Parse, counter);
             //    assetModel.title = row[counter++];
             //    assetModel.composer = long.Parse(row[counter++]);
-                
+
             //    assetModel.diff4k1 = byte.Parse(row[counter++]);
             //    assetModel.diff4k2 = byte.Parse(row[counter++]);
             //    assetModel.diff4k3 = byte.Parse(row[counter++]);
@@ -314,7 +315,7 @@ namespace Program.Model.Service.Implement
             //{
             //    counter = this.OnOpenSheets_IAssetable(row, assetModel, long.Parse, counter);
             //    assetModel.name = row[counter++];
-                
+
             //    assetModel.music1 = long.Parse(row[counter++]);
             //    assetModel.difficultType1 = (DifficultType)int.Parse(row[counter++]);
             //    assetModel.hidden1 = "1" == row[counter++];
@@ -335,9 +336,9 @@ namespace Program.Model.Service.Implement
 
             //    assetModel.missionActive = (ActiveMissionType)int.Parse(row[counter++]);
             //    assetModel.missionValue = uint.Parse(row[counter++]);
-                
+
             //    assetModel.missionMiss = byte.Parse(row[counter++]);
-                
+
             //    assetModel.missionSpeed = byte.Parse(row[counter++]);
             //    assetModel.missionFade = (NoteVisibleType)int.Parse(row[counter++]);
             //    assetModel.missionSequence = (SequenceType)int.Parse(row[counter++]);
@@ -390,6 +391,21 @@ namespace Program.Model.Service.Implement
             //    assetModel.order = int.Parse(row[counter++]);
             //    return assetModel;
             //}
+            UnitData OnOpenSheets_UnitData(SheetInfo si, object data)
+            {
+                var row = (CsvRow)data;
+                var assetModel = new UnitData();
+                var counter = 0;
+                counter = this.OnOpenSheets_IAssetable(row, assetModel, long.Parse, counter);
+                assetModel.name         = row[counter++];
+                assetModel.hp           = long.Parse(row[counter++]);
+                assetModel.damage       = long.Parse(row[counter++]);
+                assetModel.moveSpeed    = long.Parse(row[counter++]);
+                assetModel.range        = long.Parse(row[counter++]);
+                assetModel.attackSpeed  = float.Parse(row[counter++]);
+                assetModel.knockbackPower = long.Parse(row[counter++]);
+                return assetModel;
+            }
 
             internal IEnumerator[] OpenServiceTask(Asset.SubTaskHandle sth)
             {
@@ -411,6 +427,7 @@ namespace Program.Model.Service.Implement
                     //this.OnOpenServiceTask(sth, ManagedAtlas.Open),
                     //this.OnOpenServiceTask(sth, ManagedTexture.Open),
                     //this.OnOpenServiceTask(sth, ManagedTextureAtlas.Open),
+                    this.OnOpenServiceTask(sth, Unit.Open),
                 };
             }
 
